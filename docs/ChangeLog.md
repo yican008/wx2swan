@@ -1,5 +1,8 @@
 # ChangeLog
 
+## 1.0.8
+- 【Fix bug】修复wx[key]转义成swan.key，expected：swan[key];
+
 ## 1.0.5
 - 【Fix bug】增加self-closing标签转成带有endTag的，如微信支持`<navigator />和<navigator></navigator>`，而swan只支持`<navigator></navigator>`
 
