@@ -1,5 +1,37 @@
 # ChangeLog
 
+## 1.1.5 2018-08-29
+- 【Fix】增加`input`标签强制自闭合
+- 【Fix】增加不规范的**自定义组件名**修正功能
+- 【Refact】重构视图转换逻辑
+
+## 1.1.4 2018-08-20
+### 功能点
+#### wxml to swan
+- 【Feature】wx-for标签转码优化
+    - `<view wx:for="{{list}}" wx:for-item="namedItem" wx:for-index="idx"></view>`
+        - 输出：`<view s-for="namedItem, idx in list"></view>`
+- 【Feature】保留包裹属性值的原始的引号
+    - `<view class='title {{'first'}}'></view>`
+        - 输出：`<view class='title {{'first'}}'></view>`
+- 【Feature】支持wxml中奇怪的写法
+    - `<view wx:if= class="time" />`转换为`<view s-if="" class="time" />`
+    - `<view style="{{\"top: 0\"}}" />`转换为`<view style="{{'top: 0'}}" />`
+
+#### js转码
+- 【FIX】新增两个百度智能小程序不支持的api转码规则
+    - `typeof`表达式
+        - 输入：`if (typeof wx.unSupportedAPI === 'function') {}`
+        - 输出：`if (typeof swan.unSupportedAPI === 'function') {}`
+    - `!`表达式
+        - 输入：`if (!wx.unSupportedAPI) {}`
+        - 输出：`if (!swan.unSupportedAPI) {}`
+
+### 其他
+1. 将定制的htmlparser2和domhandler抽出独立的模块
+    - [stricter-htmlparser2](https://www.npmjs.com/package/stricter-htmlparser2)
+    - [x-domhandler](https://www.npmjs.com/package/x-domhandler)
+
 ## 1.1.3
 - 【Fix】修复template组件data属性转换问题: {{item}} => {{{item}}}
 - 【Fix】修复wx:if wx:for同时出现在一个标签时的转换问题

@@ -27,8 +27,8 @@
 
 ## Document
 
+- [Feature List](https://github.com/yican008/wx2swan/blob/master/docs/FeatureList.md)
 - [Tutorial FAQ](https://github.com/yican008/wx2swan/blob/master/docs/Tutorial.md)
-
 
 ## Feature
 1. parse Abstract Syntax Tree;
