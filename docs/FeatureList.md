@@ -7,11 +7,13 @@
 
 #### 完美转换的功能
 1. 插值语法: `{{variable}}`
-2. `wx:if、wx:elif、wx:else`指令
+2. `wx:if、wx:elif、wx:else`指令: 语法的规则不一致，进行了转换(去掉了双大括号)
 3. `wx:for、wx:for-item、wx:for-index`指令
 4. `wx:for-items`指令
 5. `import、include`
 6. `template`
+7. `wx:if`和`wx:for`同级：
+  微信支持if和for同级，SWAN不支持，这里用空节点block进行拆分；
 
 #### 可能影响视图展现的转换（极少见）
 1. 强制去除`input`标签的闭合标签
@@ -24,6 +26,9 @@
 
 #### 暂不支持的功能点
 1. 暂不支持`<wxs></wxs>`的转换；
+2. 自定义组件的实现机制问题，`SWAN`自定义组件是微信的子集，需要二次开发；
+3. 登录流程需要授权和server换code等等操作，和微信流程上存在diff，可能需要二次开发；
+4. 支付流程，`SWAN`支付是用的聚合收银台的机制，和微信小程序存在整体的diff，需要二次开发；
 
 ### API转换
 由于百度智能小程序API与微信的API存在diff，针对不同的API及开发者的使用方法，有不同的转换逻辑，具体如下：

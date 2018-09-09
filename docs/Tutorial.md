@@ -2,6 +2,9 @@
 
 ## FAQ
 
+### 求助问题？
+- 任何的问题，都可以通过`github issue`去提问以及查找，[Issues](https://github.com/yican008/wx2swan/issues)
+
 #### 怎么使用这个工具：
 1. ```npm install -g wx2swan```;
 2. ```wx2swan ./wxmp``` wxmp是你的微信小程序的目录；
