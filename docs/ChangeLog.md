@@ -1,5 +1,19 @@
 # ChangeLog
 
+## 1.1.7 2018-09-25
+- 【Feature】空wx:标签转码优化
+    - `	<view wx:></view>`
+        - 输出：`<view>test</view>` 
+    - `<view wx:='test'>test</view>`
+        - 输出：`<view>test</view>`
+    - `<view wx:="test">test</view>`
+        - 输出：`<view>test</view>`
+- 【Feature】无请求协议的css静态资源转码优化(默认添加https协议头)
+    - `	<view class="test" style="background: url(//www.test.com/test.jpg)"></view>`
+        - 输出：`<view class="test" style="background: url(https://www.test.com/test.jpg)"></view>` 
+    - `.backgroundImage1{background-image: url(//www.test.com/test.jpg);}`
+        - 输出：`.backgroundImage1{background-image: url(https://www.test.com/test.jpg);}`       
+
 ## 1.1.5 2018-08-29
 - 【Fix】增加`input`标签强制自闭合
 - 【Fix】增加不规范的**自定义组件名**修正功能
