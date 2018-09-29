@@ -1,5 +1,16 @@
 # ChangeLog
 
+## 1.1.8 2018-09-29
+- 【Feature】部分组件数据绑定转换为双向绑定语法
+    - `	<input value="{{1}}"></input>`
+        - 输出：`<input value="{=1=}" />` 
+    - `	<textarea value="{{1}}"></textarea>`
+        - 输出：`<textarea value="{=1=}"></textarea>` 
+    - `<scroll-view scroll-top="{{0}}" scroll-left="{{0}}" scroll-into-view="{{test}}"></scroll-view>`
+        - 输出：`<scroll-view scroll-top="{=0=}" scroll-left="{=0=}" scroll-into-view="{=test=}"></scroll-view>`
+    - `	<movable-view x="{{1}}" y="{{1}}"></movable-view>`
+        - 输出：`<movable-view x="{=1=}" y="{=1=}"></movable-view>` 
+
 ## 1.1.7 2018-09-25
 - 【Feature】空wx:标签转码优化
     - `	<view wx:></view>`
