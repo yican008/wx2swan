@@ -1,5 +1,12 @@
 # ChangeLog
 
+## 1.1.9 2018-10-10
+- 【Feature】转换日志被分为三级 info、warning、error，保存在`/log`目录下。
+	
+	waring和error日志会被打印到控制台，开发者需要根据日志信息解决转换工具无法解决的问题。
+	![图片](https://i.loli.net/2018/10/10/5bbde80e8dee6.png) 
+    
+
 ## 1.1.8 2018-09-29
 - 【Feature】部分组件数据绑定转换为双向绑定语法
     - `	<input value="{{1}}"></input>`
