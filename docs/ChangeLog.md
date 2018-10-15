@@ -1,5 +1,8 @@
 # ChangeLog
 
+## 1.1.14 2018-10-15
+- 【Feature】转换工具源码加入es6转码，解决在低版本node环境中报错的问题。
+
 ## 1.1.9 2018-10-10
 - 【Feature】转换日志被分为三级 info、warning、error，保存在`/log`目录下。
 	
