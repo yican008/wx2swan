@@ -1,6 +1,9 @@
 ## 搬家工具转换支持的Feature List
 ### 样式转换
 1. `wxml`转换为`css`
+2. 无请求协议的css静态资源转码优化(默认添加https协议头)
+    - `.backgroundImage1{background-image: url(//www.test.com/test.jpg);}`
+        - 输出：`.backgroundImage1{background-image: url(https://www.test.com/test.jpg);}` 
 
 ### 视图转换
 支持微信视图绝大部分语法的转换，具体如下：
@@ -14,6 +17,21 @@
 6. `template`
 7. `wx:if`和`wx:for`同级：
   微信支持if和for同级，SWAN不支持，这里用空节点block进行拆分；
+8. 空wx:前缀转码优化
+    - `	<view wx:></view>`
+        - 输出：`<view>test</view>` 
+9. 无请求协议的css静态资源转码优化(默认添加https协议头)
+    - `	<view class="test" style="background: url(//www.test.com/test.jpg)"></view>`
+        - 输出：`<view class="test" style="background: url(https://www.test.com/test.jpg)"></view>` 
+10. 部分组件数据绑定转换为双向绑定语法
+    - `	<input value="{{1}}"></input>`
+        - 输出：`<input value="{=1=}" />` 
+    - `	<textarea value="{{1}}"></textarea>`
+        - 输出：`<textarea value="{=1=}"></textarea>` 
+11. template组件data属性转换: {{item}} => {{{item}}}
+12. 使用on进行的数据绑定转换为bind绑定
+	- `<button ontap="ontap">点击</button>`
+		- 输出:  `<button bindtap="ontap">点击</button>`
 
 #### 可能影响视图展现的转换（极少见）
 1. 强制去除`input`标签的闭合标签
