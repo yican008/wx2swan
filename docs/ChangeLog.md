@@ -1,5 +1,19 @@
 # ChangeLog
 
+## 1.1.15 2018-10-19
+- 【Feature】使用on进行的数据绑定转换为bind绑定
+	- `<button ontap="ontap">点击</button>`
+		- 输出:  `<button bindtap="ontap">点击</button>`
+- 【Feature】wx标识符全部转换为swan
+	- `const wx = {};
+for (const key in wx) {
+    console.log(`wx${key}:`, wx[key]);
+}`
+		- 输出:  `const swan = {};
+for (const key in swan) {
+    console.log(`wx${key}:`, swan[key]);
+}`
+
 ## 1.1.14 2018-10-15
 - 【Feature】转换工具源码加入es6转码，解决在低版本node环境中报错的问题。
 
@@ -22,7 +36,7 @@
         - 输出：`<movable-view x="{=1=}" y="{=1=}"></movable-view>` 
 
 ## 1.1.7 2018-09-25
-- 【Feature】空wx:标签转码优化
+- 【Feature】空wx:前缀转码优化
     - `	<view wx:></view>`
         - 输出：`<view>test</view>` 
     - `<view wx:='test'>test</view>`
