@@ -1,5 +1,8 @@
 # ChangeLog
 
+## 1.1.16 2018-10-22
+- 【BugFix】修复on --> bind转换的问题。
+
 ## 1.1.15 2018-10-19
 - 【Feature】使用on进行的数据绑定转换为bind绑定
 	- `<button ontap="ontap">点击</button>`
