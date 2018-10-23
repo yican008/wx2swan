@@ -1,5 +1,15 @@
 # ChangeLog
 
+## 1.1.17 2018-10-23
+- 【Feature】获取页面路径的属性`__route__`转换为route
+	- `currentPage.__route__`
+		- 输出:  `currentPage.route`
+- 【Feature】include、import添加.swan默认扩展名
+	- `<include src="./test"/>
+<import src="./test"/>`
+		- 输出:  `<include src="./test.swan" />
+<import src="./test.swan" />`
+
 ## 1.1.16 2018-10-22
 - 【BugFix】修复on --> bind转换的问题。
 

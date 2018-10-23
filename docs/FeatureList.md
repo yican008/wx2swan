@@ -32,6 +32,11 @@
 12. 使用on进行的数据绑定转换为bind绑定
 	- `<button ontap="ontap">点击</button>`
 		- 输出:  `<button bindtap="ontap">点击</button>`
+13. include、import添加.swan默认扩展名
+	- `<include src="./test"/>
+<import src="./test"/>`
+		- 输出:  `<include src="./test.swan" />
+<import src="./test.swan" />`
 
 #### 可能影响视图展现的转换（极少见）
 1. 强制去除`input`标签的闭合标签
@@ -60,3 +65,6 @@
      - From: `!wx.unSupportedAPI` 或者`typeof wx.unSupportedAPI`
      - To: `!swan.unSupportedAPI` `typeof swan.unSupportedAPI`
    - 其他使用场景：尝试删除调用api的父级语句或表达式的代码，删除失败的话则保留原始代码。
+3. 获取页面路径的属性`__route__`转换为route
+	- `currentPage.__route__`
+		- 输出:  `currentPage.route`
