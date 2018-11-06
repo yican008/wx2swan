@@ -1,5 +1,10 @@
 # ChangeLog
 
+## 1.1.18 2018-11-06
+- 【BugFix】修复`__route__` --> route转换的问题。
+	- `arr[arr.length - 1].__route__`
+		- 输出:  `arr[arr.length - 1].route`
+
 ## 1.1.17 2018-10-23
 - 【Feature】获取页面路径的属性`__route__`转换为route
 	- `currentPage.__route__`
