@@ -1,5 +1,14 @@
 # ChangeLog
 
+## 1.2.0 2018-11-07
+- 【Feature】新增支持单一文件入口转换
+
+	#####支持：
+	`wx2swan entryFilePath outputFilePath`
+	`wx2swan entryFilePath outputDirPath`
+	
+	注意: 指定outputFilePath时文件扩展名需为正确的文件类型，否则不会进行转换。
+
 ## 1.1.18 2018-11-06
 - 【BugFix】修复`__route__` --> route转换的问题。
 	- `arr[arr.length - 1].__route__`
