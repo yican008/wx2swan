@@ -3,8 +3,10 @@
 ## 1.2.0 2018-11-07
 - 【Feature】新增支持单一文件入口转换
 
-	#####支持：
+	支持：
+
 	`wx2swan entryFilePath outputFilePath`
+    
 	`wx2swan entryFilePath outputDirPath`
 	
 	注意: 指定outputFilePath时文件扩展名需为正确的文件类型，否则不会进行转换。
