@@ -36,4 +36,4 @@
 ## ChangeLog
 Please visit document [ChangeLog](https://github.com/yican008/wx2swan/blob/master/docs/ChangeLog.md)
 
-
+[更多项目征集](https://github.com/yican008/wx2swan/issues/19)
