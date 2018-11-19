@@ -16,11 +16,11 @@
 2. wx2swan   微信小程序的目录   (可选: 生成swan的目录，默认为entryDir_swan)   (可选: 生成日志的目录, 默认为outputDir)
 
 	```javascript
-		wx2swan ./test/entryDir
+	wx2swan ./test/entryDir
 	```
 
 	```javascript
-		wx2swan ./test/entryDir ./test/outputDir
+	wx2swan ./test/entryDir ./test/outputDir
 	```
 	
 3. 新增支持单文件入口转换：
@@ -31,15 +31,15 @@
 	
 	
 	```javascript
-		wx2swan ./test/entryFile
+	wx2swan ./test/entryFile
 	```
 	
 	```javascript
-		wx2swan ./test/entryFile ./test/outputDir
+	wx2swan ./test/entryFile ./test/outputDir
 	```
 	
 	```javascript
-		wx2swan ./test/entryFile ./test/outputFile
+	wx2swan ./test/entryFile ./test/outputFile
 	```
 3.  **转换过程中的log都已经输出了，记得去看下转换log哟，会对你接下来的二次开发很有裨益的~~**
 
