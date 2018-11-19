@@ -12,11 +12,38 @@
 ## Quick Start
 1. 	外网(稳定版)：
 	```npm i -g wx2swan```
-2. wx2swan 微信小程序的目录 (生成swan的目录)
+	
+2. wx2swan   微信小程序的目录   (可选: 生成swan的目录，默认为entryDir_swan)   (可选: 生成日志的目录, 默认为outputDir)
+
 	```javascript
-		wx2swan ./test/demo ./test/swanDemo
+		wx2swan ./test/entryDir
+	```
+
+	```javascript
+		wx2swan ./test/entryDir ./test/outputDir
+	```
+	
+3. 新增支持单文件入口转换：
+
+	wx2swan   微信小程序的文件  (可选: 生成swan的目录或文件路径，默认为entryDir_swan/entryFile)   (可选: 生成日志的目录, 默认为outputDir)
+	
+	**注意：如果指定生成swan的文件路径，需要指定正确的文件扩展名，否则将只复制文件不进行处理**
+	
+	
+	```javascript
+		wx2swan ./test/entryFile
+	```
+	
+	```javascript
+		wx2swan ./test/entryFile ./test/outputDir
+	```
+	
+	```javascript
+		wx2swan ./test/entryFile ./test/outputFile
 	```
 3.  **转换过程中的log都已经输出了，记得去看下转换log哟，会对你接下来的二次开发很有裨益的~~**
+
+
 4. Enjoy IT ~~~
 
 ## Document
