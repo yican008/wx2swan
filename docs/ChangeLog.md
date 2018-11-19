@@ -1,5 +1,16 @@
 # ChangeLog
 
+## 1.2.2 2018-11-19
+- 【Feature】新增getExtConfigSync函数转换
+
+	- `	let data = wx.getExtConfigSync();`
+        - 输出：`let data = swan.getExtConfigSync().extConfig;` 
+    - `data = wx.getExtConfigSync().ext;`
+        - 输出：`data = swan.getExtConfigSync().extConfig.ext;` 
+    - `data = aaa[bbb].getExtConfigSync();`
+        - 输出：`data = aaa[bbb].getExtConfigSync().extConfig;`
+
+
 ## 1.2.0 2018-11-07
 - 【Feature】新增支持单一文件入口转换
 
