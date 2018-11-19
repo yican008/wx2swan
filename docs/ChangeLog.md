@@ -1,5 +1,9 @@
 # ChangeLog
 
+## 1.2.4 2018-11-19
+- 【BugFix】修复默认输出目录时的log生成位置问题。
+
+
 ## 1.2.2 2018-11-19
 - 【Feature】新增getExtConfigSync函数转换
 
