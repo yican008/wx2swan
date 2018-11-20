@@ -7,7 +7,7 @@
 - 工具只做了静态语法上的转换，根据一些规则去转换代码，抹平微信小程序语法和百度小程序语法上的差异，避免大家踩坑；
 - 搬家工具是离线的，没有运行时框架，所以有些没法抹平的`运行时diff`，需要二次开发调整。
 - 使用中的任何问题，都可以提[Issues](https://github.com/yican008/wx2swan/issues)或者加微信小助手：`wx2swan-helper`;
-![wx2swan-helper](./img/wx.jpg)
+![wx2swan-helper](https://i.loli.net/2018/11/20/5bf37ca6e8d06.jpg)
 
 ## Quick Start
 1. 	外网(稳定版)：
