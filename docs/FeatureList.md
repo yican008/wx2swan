@@ -68,3 +68,6 @@
 3. 获取页面路径的属性`__route__`转换为route
 	- `currentPage.__route__`
 		- 输出:  `currentPage.route`
+4. getExtConfigSync函数转换
+    - `data = wx.getExtConfigSync().ext;`
+        - 输出：`data = swan.getExtConfigSync().extConfig.ext;` 
