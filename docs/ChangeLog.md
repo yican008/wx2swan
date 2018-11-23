@@ -1,4 +1,6 @@
 # ChangeLog
+## 1.2.6 2018-11-23
+- 【Optimize】转换时不再删除canvasGetImageData api。
 
 ## 1.2.5 2018-11-21
 - 【Feature】优化命令行帮助提示。
