@@ -1,4 +1,9 @@
 # ChangeLog
+## 1.2.8 2018-12-13
+- 【Optimize】在转换后代码中添加`.wx2swaninfo`统计文件。
+
+   **注:** 此文件用于百度开发者工具进行数据统计与代码优化，请开发者不要自行删除。
+   
 ## 1.2.6 2018-11-23
 - 【Optimize】转换时不再删除canvasGetImageData api。
 
