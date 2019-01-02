@@ -71,3 +71,13 @@
 4. getExtConfigSync函数转换
     - `data = wx.getExtConfigSync().ext;`
         - 输出：`data = swan.getExtConfigSync().extConfig.ext;` 
+5. 自定义组件内置behaviors映射关系。
+
+        Component({
+            behaviors: ['wx://form-field', 'wx://component-export']
+        });
+        
+        // 输出: 
+        Component({
+            behaviors: ["swan://form-field", "swan://component-export"]
+        });

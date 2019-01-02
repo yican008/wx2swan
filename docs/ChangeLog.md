@@ -6,7 +6,8 @@
         Component({
             behaviors: ['wx://form-field', 'wx://component-export']
         });
-        //输出: 
+        
+        // 输出: 
         Component({
             behaviors: ["swan://form-field", "swan://component-export"]
         });
