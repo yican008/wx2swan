@@ -1,4 +1,16 @@
 # ChangeLog
+
+## 1.2.9 2019-01-02
+- 【Feature】添加自定义组件内置behaviors映射关系。
+
+        Component({
+            behaviors: ['wx://form-field', 'wx://component-export']
+        });
+        //输出: 
+        Component({
+            behaviors: ["swan://form-field", "swan://component-export"]
+        });
+
 ## 1.2.8 2018-12-13
 - 【Optimize】在转换后代码中添加`.wx2swaninfo`统计文件。
 
