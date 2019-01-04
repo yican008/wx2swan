@@ -1,5 +1,8 @@
 # ChangeLog
 
+## 1.2.10 2019-01-04
+- 【Optimize】重构Api转换逻辑。
+
 ## 1.2.9 2019-01-02
 - 【Feature】添加自定义组件内置behaviors映射关系。
 
