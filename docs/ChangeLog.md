@@ -1,5 +1,8 @@
 # ChangeLog
 
+## 1.2.11 2019-01-21
+- 【Optimize】优化`.wx2swaninfo`统计文件格式。
+
 ## 1.2.10 2019-01-04
 - 【Optimize】重构Api转换逻辑。
 
