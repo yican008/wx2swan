@@ -1,5 +1,8 @@
 # ChangeLog
 
+## 1.2.20 2019-01-31
+- 【Optimize】代码优化。
+
 ## 1.2.11 2019-01-21
 - 【Optimize】优化`.wx2swaninfo`统计文件格式。
 
